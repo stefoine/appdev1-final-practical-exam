@@ -9,7 +9,14 @@ function Login() {
     <div className={styles.signup}>
       <div className={styles.left}>
         <div className={styles.formContainer}>
-          <h1 className={styles.title}>Get Started Now</h1>
+          
+          <div className={styles.heading}>
+            <h1 className={styles.title}>Welcome back!</h1>
+            <p className={styles.subtitle}>
+              Enter your Credentials to access your account
+            </p>
+          </div>
+
 
           <form
             className={styles.form}
