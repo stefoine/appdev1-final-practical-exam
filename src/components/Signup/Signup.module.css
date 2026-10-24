@@ -12,17 +12,103 @@
   width: 50%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 0 8%;
+  padding: 40px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 404px;
 }
 
 .title {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 600;
-  color: #000000;
   line-height: 1.4;
+  color: #000000;
+  margin-bottom: 55px;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formGroup label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.formGroup input {
+  width: 100%;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+
+.formGroup input::placeholder {
+  color: #b3b3b3;
+}
+
+.formGroup input:focus {
+  border-color: #3a5b22;
+}
+
+/* Checkbox */
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkboxGroup input {
+  width: 12px;
+  height: 12px;
+  accent-color: #3a5b22;
+}
+
+.checkboxGroup label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+/* Signup button */
+
+.signupButton {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #3a5b22;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background: #2d471a;
 }
 
 /* Right section */
@@ -49,7 +135,7 @@
 @media (max-width: 768px) {
   .left {
     width: 50%;
-    padding: 0 5%;
+    padding: 20px;
   }
 
   .right {
@@ -58,6 +144,7 @@
 
   .title {
     font-size: 26px;
+    margin-bottom: 30px;
   }
 
   .flower {
