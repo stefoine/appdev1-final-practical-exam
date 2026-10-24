@@ -2,6 +2,7 @@ import styles from './Login.module.css'
 import blossomFlower from '../../assets/blossom-flower.svg'
 import googleLogo from '../../assets/icons-google-logo.svg'
 import appleLogo from '../../assets/icons-apple-logo.svg'
+import { Input } from '@/components/ui/input'
 
 function Login() {
   return (
@@ -22,7 +23,7 @@ function Login() {
           >
             <div className={styles.formGroup}>
               <label htmlFor="login-email">Email address</label>
-              <input
+              <Input
                 type="email"
                 id="login-email"
                 placeholder="Enter your email"
@@ -32,11 +33,15 @@ function Login() {
             <div className={styles.formGroup}>
               <div className={styles.passwordHeader}>
                 <label htmlFor="login-password">Password</label>
-                <a href="#forgot-password" className={styles.forgotPassword}>
+                <a
+                  href="#forgot-password"
+                  className={styles.forgotPassword}
+                >
                   forgot password
                 </a>
               </div>
-              <input
+
+              <Input
                 type="password"
                 id="login-password"
                 placeholder="Enter your password"
@@ -45,10 +50,15 @@ function Login() {
 
             <div className={styles.checkboxGroup}>
               <input type="checkbox" id="remember" />
-              <label htmlFor="remember">Remember for 30 days</label>
+              <label htmlFor="remember">
+                Remember for 30 days
+              </label>
             </div>
 
-            <button type="submit" className={styles.signupButton}>
+            <button
+              type="submit"
+              className={styles.signupButton}
+            >
               Login
             </button>
           </form>
@@ -58,12 +68,18 @@ function Login() {
           </div>
 
           <div className={styles.socialButtons}>
-            <button type="button" className={styles.socialButton}>
+            <button
+              type="button"
+              className={styles.socialButton}
+            >
               <img src={googleLogo} alt="" />
               Sign in with Google
             </button>
 
-            <button type="button" className={styles.socialButton}>
+            <button
+              type="button"
+              className={styles.socialButton}
+            >
               <img src={appleLogo} alt="" />
               Sign in with Apple
             </button>
