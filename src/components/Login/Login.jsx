@@ -70,8 +70,8 @@ function Login() {
           </div>
 
           <p className={styles.bottomText}>
-            Have an account?{' '}
-            <a href="#signin">Sign In</a>
+            Don’t have an account?{' '}
+            <a href="#signup">Sign Up</a>
           </p>
 
         </div>
