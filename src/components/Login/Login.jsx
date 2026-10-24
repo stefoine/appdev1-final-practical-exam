@@ -4,12 +4,11 @@ import googleLogo from '../../assets/icons-google-logo.svg'
 import appleLogo from '../../assets/icons-apple-logo.svg'
 
 function Login() {
-
   return (
     <div className={styles.signup}>
       <div className={styles.left}>
         <div className={styles.formContainer}>
-          
+
           <div className={styles.heading}>
             <h1 className={styles.title}>Welcome back!</h1>
             <p className={styles.subtitle}>
@@ -17,56 +16,47 @@ function Login() {
             </p>
           </div>
 
-
           <form
             className={styles.form}
             onSubmit={(e) => e.preventDefault()}
           >
             <div className={styles.formGroup}>
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="login-email">Email address</label>
               <input
                 type="email"
-                id="email"
+                id="login-email"
                 placeholder="Enter your email"
               />
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="password">Password</label>
+              <div className={styles.passwordHeader}>
+                <label htmlFor="login-password">Password</label>
+                <a href="#forgot-password" className={styles.forgotPassword}>
+                  forgot password
+                </a>
+              </div>
               <input
                 type="password"
-                id="password"
-                placeholder="Name"
+                id="login-password"
+                placeholder="Enter your password"
               />
             </div>
 
             <div className={styles.checkboxGroup}>
-              <input type="checkbox" id="terms" />
-              <label htmlFor="terms">
-                I agree to the terms &amp; policy
-              </label>
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember for 30 days</label>
             </div>
 
             <button type="submit" className={styles.signupButton}>
-              Signup
+              Login
             </button>
           </form>
 
-          {/* Divider */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>
 
-          {/* Social sign-in buttons */}
           <div className={styles.socialButtons}>
             <button type="button" className={styles.socialButton}>
               <img src={googleLogo} alt="" />
@@ -79,11 +69,11 @@ function Login() {
             </button>
           </div>
 
-          {/* Bottom text */}
           <p className={styles.bottomText}>
             Have an account?{' '}
             <a href="#signin">Sign In</a>
           </p>
+
         </div>
       </div>
 
