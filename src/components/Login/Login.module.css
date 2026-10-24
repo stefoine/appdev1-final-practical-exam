@@ -1,15 +1,11 @@
-/* MAIN LOGIN LAYOUT */
-
 .signup {
   display: flex;
   flex-direction: row;
   width: 100%;
   min-height: 100vh;
-  background: #ffffff;
+  background: var(--color-white);
   overflow: hidden;
 }
-
-/* LEFT SECTION */
 
 .left {
   width: 50%;
@@ -17,80 +13,93 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: var(--spacing-4xl);
 }
 
 .formContainer {
   width: 100%;
-  max-width: 404px;
+  max-width: var(--form-max-width);
 }
 
-/* LOGIN TITLE AND SUBTITLE */
-
 .heading {
-  margin-bottom: 55px;
+  margin-bottom: var(--spacing-title);
 }
 
 .title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
+  font-family: var(--font-family);
+  font-size: var(--font-title);
   font-weight: 600;
   line-height: 1.4;
-  color: #000000;
+  color: var(--color-black);
   margin-bottom: 0;
 }
 
 .subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-family: var(--font-family);
+  font-size: var(--font-label);
   font-weight: 500;
-  color: #000000;
-  margin-top: 4px;
+  color: var(--color-black);
+  margin-top: var(--spacing-xs);
   line-height: 1.5;
 }
-
-/* FORM */
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-2xl);
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: var(--spacing-sm);
 }
 
 .formGroup label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-family: var(--font-family);
+  font-size: var(--font-label);
   font-weight: 500;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .formGroup input {
   width: 100%;
-  height: 34px;
-  padding: 0 12px;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  background: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  height: var(--input-height);
+  padding: 0 var(--spacing-lg);
+  border: var(--border-default);
+  border-radius: var(--radius-input);
+  background: var(--color-white);
+  font-family: var(--font-family);
+  font-size: var(--font-small);
   outline: none;
 }
 
 .formGroup input::placeholder {
-  color: #b3b3b3;
+  color: var(--color-placeholder);
 }
 
 .formGroup input:focus {
-  border-color: #3a5b22;
+  border-color: var(--color-primary);
 }
 
-/* CHECKBOX */
+.passwordHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.forgotPassword {
+  font-family: var(--font-family);
+  font-size: var(--font-caption);
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
 
 .checkboxGroup {
   display: flex;
@@ -101,43 +110,39 @@
 .checkboxGroup input {
   width: 12px;
   height: 12px;
-  accent-color: #3a5b22;
+  accent-color: var(--color-primary);
 }
 
 .checkboxGroup label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 11px;
-  color: #000000;
+  font-family: var(--font-family);
+  font-size: var(--font-caption);
+  color: var(--color-black);
 }
-
-/* BUTTON */
 
 .signupButton {
   width: 100%;
-  height: 35px;
+  height: var(--button-height);
   border: none;
-  border-radius: 8px;
-  background: #3a5b22;
-  color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
+  border-radius: var(--radius-input);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: var(--font-body);
   font-weight: 600;
   cursor: pointer;
 }
 
 .signupButton:hover {
-  background: #2d471a;
+  background: var(--color-primary-hover);
 }
-
-/* DIVIDER */
 
 .divider {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin: 40px 0;
-  font-size: 12px;
-  color: #000000;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-4xl) 0;
+  font-size: var(--font-small);
+  color: var(--color-black);
 }
 
 .divider::before,
@@ -145,62 +150,58 @@
   content: '';
   flex: 1;
   height: 1px;
-  background: #e5e5e5;
+  background: var(--color-divider);
 }
 
 .divider span {
   white-space: nowrap;
 }
 
-/* SOCIAL SIGN-IN BUTTONS */
-
 .socialButtons {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-xl);
   width: 100%;
 }
 
 .socialButton {
   flex: 1;
   min-width: 0;
-  height: 36px;
+  height: var(--social-button-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 0 8px;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #000000;
-  font-family: 'Poppins', sans-serif;
-  font-size: 11px;
+  gap: var(--spacing-md);
+  padding: 0 var(--spacing-md);
+  border: var(--border-default);
+  border-radius: var(--radius-input);
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-family);
+  font-size: var(--font-caption);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .socialButton img {
-  width: 18px;
-  height: 18px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   object-fit: contain;
 }
 
 .socialButton:hover {
-  background: #f5f5f5;
+  background: var(--color-social-hover);
 }
 
-/* BOTTOM TEXT */
-
 .bottomText {
-  margin-top: 25px;
+  margin-top: var(--spacing-3xl);
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  color: #000000;
+  font-family: var(--font-family);
+  font-size: var(--font-body);
+  color: var(--color-black);
 }
 
 .bottomText a {
-  color: #0f3dde;
+  color: var(--color-link);
   text-decoration: none;
   font-weight: 500;
 }
@@ -208,8 +209,6 @@
 .bottomText a:hover {
   text-decoration: underline;
 }
-
-/* RIGHT SECTION */
 
 .right {
   width: 50%;
@@ -223,17 +222,15 @@
 .flower {
   display: block;
   width: 100%;
-  max-width: 680px;
+  max-width: var(--flower-max-width);
   height: 90vh;
   object-fit: contain;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 768px) {
   .left {
     width: 50%;
-    padding: 20px;
+    padding: var(--spacing-2xl);
   }
 
   .right {
@@ -249,7 +246,7 @@
   }
 
   .subtitle {
-    font-size: 12px;
+    font-size: var(--font-small);
   }
 
   .flower {
@@ -263,27 +260,6 @@
   }
 
   .divider {
-    margin: 25px 0;
+    margin: var(--spacing-3xl) 0;
   }
-}
-
-/* LOGIN PASSWORD LABEL AND FORGOT PASSWORD LINK */
-
-.passwordHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.forgotPassword {
-  font-family: 'Poppins', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  color: #0f3dde;
-  text-decoration: none;
-}
-
-.forgotPassword:hover {
-  text-decoration: underline;
 }
