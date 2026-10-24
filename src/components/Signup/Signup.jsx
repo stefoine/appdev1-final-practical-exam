@@ -5,7 +5,9 @@ function Signup() {
   return (
     <div className={styles.signup}>
       <div className={styles.left}>
-        {/* Left section intentionally empty */}
+        <h1 className={styles.title}>
+          Get Started Now
+        </h1>
       </div>
 
       <div className={styles.right}>
