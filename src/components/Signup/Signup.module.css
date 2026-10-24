@@ -1,12 +1,13 @@
 .signup {
   display: flex;
+  flex-direction: row;
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
   overflow: hidden;
 }
 
-/* Left section */
+/* LEFT SECTION */
 
 .left {
   width: 50%;
@@ -31,7 +32,7 @@
   margin-bottom: 55px;
 }
 
-/* Form */
+/* FORM */
 
 .form {
   display: flex;
@@ -72,7 +73,7 @@
   border-color: #3a5b22;
 }
 
-/* Checkbox */
+/* CHECKBOX */
 
 .checkboxGroup {
   display: flex;
@@ -92,7 +93,7 @@
   color: #000000;
 }
 
-/* Signup button */
+/* SIGNUP BUTTON */
 
 .signupButton {
   width: 100%;
@@ -111,7 +112,87 @@
   background: #2d471a;
 }
 
-/* Right section */
+/* DIVIDER */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0;
+  font-size: 12px;
+  color: #000000;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.divider span {
+  white-space: nowrap;
+}
+
+/* SOCIAL BUTTONS */
+
+.socialButtons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.socialButton {
+  flex: 1;
+  min-width: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.socialButton img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.socialButton:hover {
+  background: #f5f5f5;
+}
+
+/* BOTTOM TEXT */
+
+.bottomText {
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #000000;
+}
+
+.bottomText a {
+  color: #0f3dde;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bottomText a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SECTION */
 
 .right {
   width: 50%;
@@ -130,7 +211,7 @@
   object-fit: contain;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .left {
@@ -150,5 +231,14 @@
   .flower {
     height: auto;
     max-height: 90vh;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .divider {
+    margin: 25px 0;
   }
 }
