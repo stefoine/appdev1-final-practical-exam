@@ -1,7 +1,7 @@
+import Signup from './components/Signup/Signup'
+
 function App() {
-  return (
-    <h1>APPDEV1 Final Project</h1>
-  )
+  return <Signup />
 }
 
 export default App

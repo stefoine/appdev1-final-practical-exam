@@ -1,0 +1,44 @@
+.signup {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.left {
+  width: 50%;
+  min-height: 100vh;
+}
+
+.right {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.flower {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: 90vh;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .flower {
+    height: auto;
+    max-height: 90vh;
+  }
+}
